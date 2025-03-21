@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Property Price Prediction</title>
+</head>
+<body>
+    <header class="header">
+        <h1>🏠 Bangalore Property Price Prediction</h1>
+    </header>
+
+    <section class="hero">
+        <img src="client/istockphoto-1396856251-1024x1024.jpg" alt="Bangalore Property" class="hero-img">
+        <p>This project predicts property prices in Bangalore using advanced machine learning techniques.</p>
+        <a href="client/app.html"> <button onclick="scrollToForm()">Try Prediction</button></a>
+    </section>
+
+    <section id="details" class="details-section">
+        <h2>📊 About the Project</h2>
+        <p>I developed this property price prediction model independently using Python and popular machine learning libraries.</p>
+
+        <h3>🛠️ Technologies Used:</h3>
+        <ul>
+            <li><strong>Python:</strong> Core language for data analysis and model building.</li>
+            <li><strong>Pandas:</strong> Data manipulation and preprocessing.</li>
+            <li><strong>Numpy:</strong> Efficient numerical computations.</li>
+            <li><strong>Matplotlib & Seaborn:</strong> Data visualization and exploratory analysis.</li>
+            <li><strong>Scikit-learn:</strong> Model training, evaluation, and prediction.</li>
+        </ul>
+
+        <h3>🔍 How It Works:</h3>
+        <p>The model uses features like area, BHK, and location to estimate property prices. It is trained on a real dataset to ensure accurate predictions.</p>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Property Price Prediction | Designed by Gyan</p>
+    </footer>
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; box-sizing: border-box; }
+        .header { text-align: center; padding: 2rem; background: #4CAF50; color: white; }
+        .hero { text-align: center; padding: 3rem 1rem; animation: fadeIn 2s; }
+        .hero-img { width: 40%; max-width: 400px; border-radius: 12px; }
+        button { padding: 0.8rem 1.5rem; background: #2196F3; color: white; border: none; border-radius: 8px; cursor: pointer; transition: transform 0.3s; }
+        button:hover { transform: scale(1.1); }
+        .details-section { padding: 2rem; background: #f5f5f5; }
+        ul { list-style: none; padding-left: 0; }
+        li { margin-bottom: 0.5rem; }
+        .footer { text-align: center; padding: 1rem; background: #333; color: white; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @media (max-width: 600px) { ul { padding: 0; } }
+    </style>
+
+    <script>
+        function scrollToDetails() {
+            document.getElementById('details').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToForm() {
+            document.getElementById('predict-form').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
